@@ -13,69 +13,63 @@
     <title>page 1</title>
   </head>
   <body class="p-5">
-    <h1 class="mb-5">Страница 1</h1>
+    <div class="d-flex" style="flex-shrink: inherit">
+      <form class="form card p-3 m-3" style="width: 18rem">
+        <h5 class="card-title">Выберите продукт</h5>
+        <select
+          aria-label="Default select example"
+          class="form-select"
+          data-select="order"
+        >
+          <option selected>Название</option>
+          <option value="1">Пинцет</option>
+          <option value="2">Зубная щетка</option>
+          <option value="3">Расческа</option>
+        </select>
+        <span for="customRange2" class="form-label mt-2" data-range="show"
+          >Количество: 0</span
+        >
+        <input
+          type="range"
+          class="form-range"
+          min="0"
+          max="5"
+          data-range="input"
+          value="0"
+        />
+        <button class="btn btn-success mt-3" data-btn="add">В корзину</button>
+      </form>
 
-    <form class="form card p-3" style="width: 18rem">
-      <h5 class="card-title">Выберите продукт</h5>
-      <select
-        aria-label="Default select example"
-        class="form-select"
-        data-select="order"
-      >
-        <option selected>Название</option>
-        <option value="1">Пинцет</option>
-        <option value="2">Зубная щетка</option>
-        <option value="3">Расческа</option>
-      </select>
-      <span for="customRange2" class="form-label mt-2" data-range="show"
-        >Количество: 0</span
-      >
-      <input
-        type="range"
-        class="form-range"
-        min="0"
-        max="5"
-        data-range="input"
-        value="0"
-      />
-      <button class="btn btn-outline-primary mt-3" data-btn="add">
-        В корзину
-      </button>
-    </form>
-
-    <form class="form card p-3 mt-5" style="width: 18rem">
-      <h5 class="card-title">Выберите продукт</h5>
-      <select
-        aria-label="Default select example"
-        class="form-select"
-        data-select="order"
-      >
-        <option selected>Название</option>
-        <option value="4">Дождевик</option>
-        <option value="5">Пельмени</option>
-        <option value="6">Игрушка</option>
-      </select>
-      <span for="customRange2" class="form-label mt-2" data-range="show"
-        >Количество: 0</span
-      >
-      <input
-        type="range"
-        class="form-range"
-        min="0"
-        max="5"
-        data-range="input"
-        value="0"
-      />
-      <button class="btn btn-outline-primary mt-3" data-btn="add">
-        В корзину
-      </button>
-    </form>
+      <form class="form card p-3 m-3" style="width: 18rem">
+        <h5 class="card-title">Выберите продукт</h5>
+        <select
+          aria-label="Default select example"
+          class="form-select"
+          data-select="order"
+        >
+          <option selected>Название</option>
+          <option value="4">Дождевик</option>
+          <option value="5">Пельмени</option>
+          <option value="6">Игрушка</option>
+        </select>
+        <span for="customRange2" class="form-label mt-2" data-range="show"
+          >Количество: 0</span
+        >
+        <input
+          type="range"
+          class="form-range"
+          min="0"
+          max="5"
+          data-range="input"
+          value="0"
+        />
+        <button class="btn btn-success mt-3" data-btn="add">В корзину</button>
+      </form>
+    </div>
 
     <button class="btn btn-outline-primary mt-3" data-btn="show">
-      Показать карзину
+      Показать корзину
     </button>
-
-    <a href="page2.html">Страница 2</a>
     <script src="index.js" type="module"></script>
   </body>
 </html>
